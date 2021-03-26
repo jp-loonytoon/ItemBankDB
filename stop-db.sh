@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker stop mariadb-staging
-docker rm mariadb-staging
+docker rm ngl-staging
 
 # if this doesn't work you may have to try this:
 #

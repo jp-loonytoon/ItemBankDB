@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DB_NAME=NGLItemBank
-DB_INSTANCE=mariadb-staging
+DB_INSTANCE=ngl-staging
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 DB_DIR=$DIR/$DB_INSTANCE
