@@ -1,4 +1,5 @@
 .db-credentials
 
 backups/
-mariadb-staging/
+ngl-staging/
+ngl-prod/

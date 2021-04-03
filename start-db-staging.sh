@@ -1,13 +1,13 @@
 #!/bin/bash
 
 DB_NAME=NGLItemBank
-DB_INSTANCE=ngl-prod
+DB_INSTANCE=ngl-staging
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 DB_DIR=$DIR/$DB_INSTANCE
 ROOT_PWD=`cat $DIR/.db-credentials`
 
-docker run --name $DB_INSTANCE -p 3306:3306 \
+docker run --name $DB_INSTANCE -p 33061:3306 \
     --rm -d \
     -v $DB_DIR/config:/etc/mysql/conf.d \
     -v $DB_DIR/datadir:/var/lib/mysql \
